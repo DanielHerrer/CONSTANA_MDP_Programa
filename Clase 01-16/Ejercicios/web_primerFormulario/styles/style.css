@@ -1,0 +1,85 @@
+html {
+    max-width: 1400px;
+    min-width: 350px;
+}
+
+body {
+    font-family: 'Asap', sans-serif;
+}
+
+header {
+    text-align: center;
+    height: 12.5vh;
+    width: 100%;
+    padding-top: 2%;
+    background-color: #2b2929;
+}
+
+header p {
+    font-size: 3em;
+    font-weight: bold;
+    color: #ff9100;
+}
+
+main {
+    height: 70vh;
+    width: 100%;
+    padding-top: 5vh;
+    text-align: center;
+    background-image: url(/web_primerFormulario/img/fondo-programa.jpg);
+    background-size: cover;
+    
+}
+
+    section {
+        /* margin-top: 5vh; */
+        /* padding: 1vh 1vw; */
+        width: auto;
+    }
+    
+        section > form {
+            margin: 0 auto;
+            width: 55vw;
+            border: #2b2929;
+            border-radius: 25px;
+            padding: 2.5%;
+            background-color: #d4d6e6;
+        }
+            section > form > h2 {
+                font-size: 2em;
+                font-weight: bold;
+                color: #2b2929;
+                margin: 2% 0;
+            }
+            section > form > input {
+                width: 50%;
+                margin: 0 auto;
+                /* margin-bottom: 2.5vh; */
+            }
+
+            section > form .btn-enviar {
+                width: 50%;
+                margin: 0 auto;
+                /* margin-top: 5vh; */
+            }
+
+footer {
+    text-align: center;
+    height: 17.5vh;
+    width: 100%;
+    background-color: #2b2929;
+}
+    .footer-p {
+        color: #fff;
+        padding-bottom: 0.35%;
+    }
+    footer .footer-p:first-child {
+        padding-top: 2%;
+    }
+    footer p > a {
+        text-decoration: none;
+        color: #ffffff;
+    }
+    footer p > a > img {
+        width: 15px;
+    }

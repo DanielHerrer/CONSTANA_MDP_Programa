@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="icon" href="./img/" type="image/x-icon">
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Asap:wght@200&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <p>MDP Programa</p>
+    </header>
+    <main>
+        <section>
+            <form>
+                <h1>Formulario de registro</h1>
+                <h2>Informacion personal</h2>
+                <label for="nombre">Nombre:</label><br>
+                <input type="text" id="nombre" name="nombre" required><br>
+                <label for="apellido">Apellido:</label><br>
+                <input type="text" id="apellido" name="apellido" required><br>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required><br>
+                <label for="tel">Telefono:</label><br>
+                <input type="tel" id="telefono" name="telefono" required><br>
+                <label class="trabaja">
+                    <h4>¿Trabaja actualmente?</h4>
+                    <input type="radio" name="trabaja" id="trabaja" required>Si
+                    <input type="radio" name="trabaja" id="trabaja" checked="true">No
+                </label>
+                <label class="cv">
+                    <h4>Enviar CV:</h4>
+                    <input type="file" name="cv" id="cv">
+                </label><br>
+                <button type="submit" class="btn-enviar">Enviar</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p class="footer-p">MDP Programa - Formulario de Ingreso</p>
+        <p class="footer-p"><a href="https://github.com/DanielHerrer" target="_blank" rel="noopener noreferrer"><img class="logo-github" src="./img/logo-github.png" alt="Logo de GitHub">GitHub</a></p>
+        <p class="footer-p"><a href="https://www.linkedin.com/in/danielfrancoherrera/" target="_blank" rel="noopener noreferrer"><img class="logo-linkedin" src="./img/logo-linkedin.png" alt="Logo de LinkedIn">Daniel Franco Herrera</a></p>
+    </footer>
+</body>
+</html>
