@@ -18,6 +18,8 @@
     </header>
     <main>
         <section>
+            <!--  -->
+            <form action="" method="post"></form>
             <form>
                 <h1>Formulario de registro</h1>
                 <h2>Informacion personal</h2>
@@ -29,6 +31,15 @@
                 <input type="email" id="email" name="email" required><br>
                 <label for="tel">Telefono:</label><br>
                 <input type="tel" id="telefono" name="telefono" required><br>
+                <label for="select">Pais:</label><br>
+                <select name="pais" id="pais" required>
+                    <option value="" selected>Ingrese un pais</option>
+                    <option value="arg">Argentina</option>
+                    <option value="esp">España</option>
+                    <option value="mex">Mexico</option>
+                    <option value="uru">Uruguay</option>
+                    <option value="chi">Chile</option>
+                </select>
                 <label class="trabaja">
                     <h4>¿Trabaja actualmente?</h4>
                     <input type="radio" name="trabaja" id="trabaja" required>Si

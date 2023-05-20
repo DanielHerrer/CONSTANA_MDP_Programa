@@ -22,13 +22,12 @@ header p {
 }
 
 main {
-    height: 70vh;
+    height: 80vh;
     width: 100%;
     padding-top: 5vh;
     text-align: center;
     background-image: url(/web_primerFormulario/img/fondo-programa.jpg);
     background-size: cover;
-    
 }
 
     section {
@@ -54,7 +53,7 @@ main {
             section > form > input {
                 width: 50%;
                 margin: 0 auto;
-                /* margin-bottom: 2.5vh; */
+                margin-bottom: 2.5vh;
             }
 
             section > form .btn-enviar {
