@@ -15,18 +15,18 @@ header {
     background-color: #2b2929;
 }
 
-header p {
+.titulo-header {
     font-size: 3em;
     font-weight: bold;
     color: #ff9100;
 }
 
 main {
-    height: 80vh;
+    height: 90vh;
     width: 100%;
-    padding-top: 5vh;
+    padding: 5vh 0;
     text-align: center;
-    background-image: url(/web_primerFormulario/img/fondo-programa.jpg);
+    background-image: url(../img/fondo-programa.jpg);
     background-size: cover;
 }
 
@@ -36,7 +36,8 @@ main {
         width: auto;
     }
     
-        section > form {
+        .registro {
+            display: block;
             margin: 0 auto;
             width: 55vw;
             border: #2b2929;
@@ -44,22 +45,31 @@ main {
             padding: 2.5%;
             background-color: #d4d6e6;
         }
-            section > form > h2 {
-                font-size: 2em;
+            .registro-titulo {
+                font-size: 2.5em;
                 font-weight: bold;
-                color: #2b2929;
+            }
+            .registro-subtitulo {
+                font-size: 1.5em;
+                color: #3b3a3a;
                 margin: 2% 0;
             }
-            section > form > input {
-                width: 50%;
-                margin: 0 auto;
+            .registro-label {
+                width: 100%;
+                font-size: 1.25em;
+                color: #3b3a3a;
+                /* margin-bottom: 2.5vh; */
+            }
+            .registro-input {
+                width: 60%;
+                margin: 0 20%;
                 margin-bottom: 2.5vh;
             }
 
-            section > form .btn-enviar {
-                width: 50%;
-                margin: 0 auto;
-                /* margin-top: 5vh; */
+            .btn-enviar {
+                width: 40%;
+                margin: 0 30%;
+                margin-top: 4vh;
             }
 
 footer {

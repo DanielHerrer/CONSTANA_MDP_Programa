@@ -14,23 +14,23 @@
 </head>
 <body>
     <header>
-        <p>MDP Programa</p>
+        <p class="titulo-header">MDP Programa</p>
     </header>
     <main>
         <section>
-            <form action="/url" method="post">
-                <h1>Formulario de registro</h1>
-                <h2>Informacion personal</h2>
-                <label for="nombre">Nombre:</label><br>
-                <input type="text" id="nombre" name="nombre" required><br>
-                <label for="apellido">Apellido:</label><br>
-                <input type="text" id="apellido" name="apellido" required><br>
-                <label for="email">Email:</label><br>
-                <input type="email" id="email" name="email" required><br>
-                <label for="tel">Telefono:</label><br>
-                <input type="tel" id="telefono" name="telefono" required><br>
-                <label for="select">Pais:</label><br>
-                <select name="pais" id="pais" required>
+            <form class="registro" action="/url" method="post">
+                <h1 class="registro-titulo">Formulario de registro</h1>
+                <h2 class="registro-subtitulo">Informacion personal</h2>
+                <label class="registro-label" for="nombre">Nombre:</label>
+                <input class="registro-input" type="text" id="nombre" name="nombre" required>
+                <label class="registro-label" for="apellido">Apellido:</label>
+                <input class="registro-input" type="text" id="apellido" name="apellido" required>
+                <label class="registro-label" for="email">Email:</label>
+                <input class="registro-input" type="email" id="email" name="email" required>
+                <label class="registro-label" for="tel">Telefono:</label>
+                <input class="registro-input" type="tel" id="telefono" name="telefono" required>
+                <label class="registro-label" for="select">Pais:</label>
+                <select  class="registro-select" name="pais" id="pais" required>
                     <option value="" selected>Ingrese un pais</option>
                     <option value="arg">Argentina</option>
                     <option value="esp">España</option>
@@ -38,12 +38,12 @@
                     <option value="uru">Uruguay</option>
                     <option value="chi">Chile</option>
                 </select>
-                <label class="trabaja">
+                <label class="registro-label">
                     <h4>¿Trabaja actualmente?</h4>
                     <input type="radio" name="trabaja" id="trabaja" required>Si
                     <input type="radio" name="trabaja" id="trabaja" checked="true">No
                 </label>
-                <label class="cv">
+                <label class="registro-label">
                     <h4>Enviar CV:</h4>
                     <input type="file" name="cv" id="cv">
                 </label><br>
