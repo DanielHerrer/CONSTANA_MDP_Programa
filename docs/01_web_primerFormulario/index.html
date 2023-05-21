@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulario</title>
-    <link rel="icon" href="./img/" type="image/x-icon">
     <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -21,32 +20,47 @@
             <form class="registro" action="/url" method="post">
                 <h1 class="registro-titulo">Formulario de registro</h1>
                 <h2 class="registro-subtitulo">Informacion personal</h2>
-                <label class="registro-label" for="nombre">Nombre:</label>
-                <input class="registro-input" type="text" id="nombre" name="nombre" required>
-                <label class="registro-label" for="apellido">Apellido:</label>
-                <input class="registro-input" type="text" id="apellido" name="apellido" required>
-                <label class="registro-label" for="email">Email:</label>
-                <input class="registro-input" type="email" id="email" name="email" required>
-                <label class="registro-label" for="tel">Telefono:</label>
-                <input class="registro-input" type="tel" id="telefono" name="telefono" required>
-                <label class="registro-label" for="select">Pais:</label>
-                <select  class="registro-select" name="pais" id="pais" required>
-                    <option value="" selected>Ingrese un pais</option>
-                    <option value="arg">Argentina</option>
-                    <option value="esp">España</option>
-                    <option value="mex">Mexico</option>
-                    <option value="uru">Uruguay</option>
-                    <option value="chi">Chile</option>
-                </select>
-                <label class="registro-label">
-                    <h4>¿Trabaja actualmente?</h4>
-                    <input type="radio" name="trabaja" id="trabaja" required>Si
-                    <input type="radio" name="trabaja" id="trabaja" checked="true">No
-                </label>
-                <label class="registro-label">
-                    <h4>Enviar CV:</h4>
-                    <input type="file" name="cv" id="cv">
-                </label><br>
+                <div class="registro-label">
+                    <label for="nombre">Nombre:</label>
+                    <input class="registro-input" type="text" id="nombre" name="nombre" required>
+                </div>
+                <div class="registro-label">
+                    <label for="apellido">Apellido:</label>
+                    <input class="registro-input" type="text" id="apellido" name="apellido" required>
+                </div>
+                <div class="registro-label">
+                    <label for="email">Email:</label>
+                    <input class="registro-input" type="email" id="email" name="email" required>
+                </div>
+                <div class="registro-label">
+                    <label for="tel">Telefono:</label>
+                    <input class="registro-input" type="tel" id="telefono" name="telefono" required>
+                </div>
+                <div class="registro-label">
+                    <label for="select">Pais:</label>
+                    <select  class="registro-select" name="pais" id="pais" required>
+                        <option value="" selected>Ingrese un pais</option>
+                        <option value="arg">Argentina</option>
+                        <option value="esp">España</option>
+                        <option value="mex">Mexico</option>
+                        <option value="uru">Uruguay</option>
+                        <option value="chi">Chile</option>
+                    </select>
+                </div>
+                <div class="registro-label">
+                    <label>
+                        <h4>¿Trabaja actualmente?</h4>
+                        <input type="radio" name="trabaja" id="trabaja" required>Si
+                        <input type="radio" name="trabaja" id="trabaja" checked="true">No
+                    </label>
+                </div>
+                <div class="registro-label">
+                    <label>
+                        <h4>Enviar CV:</h4>
+                        <input type="file" name="cv" id="cv">
+                    </label>
+                </div>
+                
                 <button type="submit" class="btn-enviar">Enviar</button>
             </form>
         </section>
