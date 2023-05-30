@@ -17,9 +17,9 @@ Cambiar algunas tipografías.
     --color-primary: #e79c6b;
     --color-secondary: #b2d4f0;
     --color-tertiary: #edf5ff;
-    --size-font-s: 12px;
+    --size-font-s: 16px;
     --size-font-m: 24px;
-    --size-font-l: 85px;
+    --size-font-l: 75px;
 }
 
 * {
@@ -28,21 +28,21 @@ Cambiar algunas tipografías.
 
 body {
     width: 100%;
-    margin: 0 0;
-    padding: 0 0;
+    margin: 0px;
+    padding: 0px;
 }
 
 .container-main {
-    margin: 0 0;
-    padding: 4vh 2vw;
+    margin: 0px;
+    padding: 4vh 20vw;
     background-color: var(--color-tertiary);
     display: block;
 }
 
 .container-head {
     width: 100%;
-    margin: 0 0;
-    padding: 0 0;
+    margin: 0px;
+    padding: 0px;
     /* background-color: var(--color-primary); */
 
 }
@@ -51,38 +51,42 @@ body {
     width: 100%;
     /* display: inline-block; */
     text-align: center;
-    margin: 0 0;
-    padding: 0 0;
+    margin: 0px;
+    padding: 0px;
 }
 
-.pic {
+img.pic {
     display: inline-block;
-    width: 10%;
+    width: 12.5%;
     border-radius: 50%;
-    margin-right: 2vw;
-    margin-left: -2vw;
+    vertical-align: top;
+    margin: 1vh 1vw;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
 }
 
-.name {
+h2.name {
     display: inline-block;
-    padding: 0 0;
-    margin: 0 0;
+    padding: 0px;
+    margin: 2vh 1vw;
+    vertical-align: top;
     font-family: var(--font-title);
     font-size: var(--size-font-l);
 }
 
 .container-head-bot {
     text-align: center;
-    margin: 0 0;
-    padding: 0 0;
-    margin-bottom: 4vh;
+    margin-bottom: 3vh;
+    padding: 0px;
 }
 
 .container-head-bot-item {
     display: inline-block;
     background-color: var(--color-primary);
-    padding: 0.5vh 1vw;
+    color: var(--color-tertiary);
+    padding: 0.1vh 1vw;
+    margin: 1vh 0.2vw;
     border-radius: 25px;
+    font-size: var(--size-font-s);
 }
 
 .container-field {
@@ -91,11 +95,18 @@ body {
 
 .container-field fieldset {
     background-color: var(--color-secondary);
-    border: 0 none #FFFFFF;
+    border: 0px none #FFFFFF;
     border-radius: 25px;
 }
 
 .container-field legend {
+    background-color: var(--color-tertiary);
+    padding: 1vh 1vw;
+    border-radius: 15px;
     font-weight: bold;
     font-size: var(--size-font-m);
+}
+
+.field-exp ul li:nth-last-child(-n+2) {
+    opacity: 0.5;
 }
