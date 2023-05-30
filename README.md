@@ -10,3 +10,5 @@ Laboratorio:
 <a href="https://danielherrer.github.io/MDP_Programa_HTML-CSS/02_web_BlogTablas/index.html">02 - Web Tablas</a>
 
 <a href="https://danielherrer.github.io/MDP_Programa_HTML-CSS/03_web_dimensionesSimples/index.html">03 - Web Dimensiones</a>
+
+<a href="https://danielherrer.github.io/MDP_Programa_HTML-CSS/04_web_cv_2.0_css/index.html">04 - Web CV 2.0</a>
