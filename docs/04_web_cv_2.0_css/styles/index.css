@@ -1,0 +1,101 @@
+/* 
+Cambiar algunas tipografías.
+●Centrar algunos elementos.
+●Agregar contenido en forma de listas
+●Cambiar de color letras y fondos 
+*/
+
+/*
+  font-family: 'Bebas Neue', sans-serif;
+  font-family: 'Red Hat Display', sans-serif; 
+*/
+
+:root{
+    --font-title: 'Bebas Neue', sans-serif;
+    --font-subtitle: none;
+    --font-text: 'Red Hat Display', sans-serif;
+    --color-primary: #e79c6b;
+    --color-secondary: #b2d4f0;
+    --color-tertiary: #edf5ff;
+    --size-font-s: 12px;
+    --size-font-m: 24px;
+    --size-font-l: 85px;
+}
+
+* {
+    font-family: var(--font-text);    
+}
+
+body {
+    width: 100%;
+    margin: 0 0;
+    padding: 0 0;
+}
+
+.container-main {
+    margin: 0 0;
+    padding: 4vh 2vw;
+    background-color: var(--color-tertiary);
+    display: block;
+}
+
+.container-head {
+    width: 100%;
+    margin: 0 0;
+    padding: 0 0;
+    /* background-color: var(--color-primary); */
+
+}
+
+.container-head-top {
+    width: 100%;
+    /* display: inline-block; */
+    text-align: center;
+    margin: 0 0;
+    padding: 0 0;
+}
+
+.pic {
+    display: inline-block;
+    width: 10%;
+    border-radius: 50%;
+    margin-right: 2vw;
+    margin-left: -2vw;
+}
+
+.name {
+    display: inline-block;
+    padding: 0 0;
+    margin: 0 0;
+    font-family: var(--font-title);
+    font-size: var(--size-font-l);
+}
+
+.container-head-bot {
+    text-align: center;
+    margin: 0 0;
+    padding: 0 0;
+    margin-bottom: 4vh;
+}
+
+.container-head-bot-item {
+    display: inline-block;
+    background-color: var(--color-primary);
+    padding: 0.5vh 1vw;
+    border-radius: 25px;
+}
+
+.container-field {
+    margin-bottom: 5vh;
+}
+
+.container-field fieldset {
+    background-color: var(--color-secondary);
+    border: 0 none #FFFFFF;
+    border-radius: 25px;
+}
+
+.container-field legend {
+    font-weight: bold;
+    font-size: var(--size-font-m);
+}
