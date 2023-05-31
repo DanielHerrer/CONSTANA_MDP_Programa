@@ -1,10 +1,14 @@
+:root {
+    --font-family-title: 'Bruno Ace SC', cursive;
+    --font-family-body: 'Asap', sans-serif;
+    --color-principal: #ff9100;
+    --color-background: #2b2929;
+    --color-light: #f0f1fa;
+}
+
 html {
     max-width: 1400px;
     min-width: 350px;
-}
-
-body {
-    font-family: 'Asap', sans-serif;
 }
 
 header {
@@ -12,17 +16,20 @@ header {
     height: 12.5vh;
     width: 100%;
     padding-top: 2%;
-    background-color: #2b2929;
+    background-color: var(--color-background);
 }
 
 .titulo-header {
+    font-family: var(--font-family-title);
     font-size: 3em;
     font-weight: bold;
-    color: #ff9100;
+    color: var(--color-principal);
+    text-shadow: 0px 0px 7px rgba(255, 145, 0, 0.75); /*equivale a #ff9100*/
 }
 
 main {
-    height: 115vh;
+    font-family: var(--font-family-body);
+    height: 120vh;
     width: 100%;
     padding: 5vh 0;
     text-align: center;
@@ -38,37 +45,76 @@ main {
     
         .registro {
             display: block;
+            text-align: center;
             margin: 0 auto;
-            width: 55vw;
-            border: #2b2929;
-            border-radius: 25px;
-            padding: 2.5%;
-            background-color: #d4d6e6;
+            width: 40vw;
+            border: var(--color-background);
+            border-radius: 10px;
+            padding: 5vh 3vw;
+            background-color: var(--color-light);
         }
             .registro-titulo {
+                display: block;
                 font-size: 2.5em;
                 font-weight: bold;
+                color: gray;
+                margin-top: 0;
             }
             .registro-subtitulo {
+                display: block;
                 font-size: 1.5em;
-                color: #3b3a3a;
-                margin: 2% 0;
+                color: gray;
+                margin: 2% auto;
             }
             .registro-label {
+                display: block;
                 width: 100%;
                 font-size: 1.25em;
                 color: #3b3a3a;
-                margin: 2.5vh 0;
+                margin: 2.5vh auto;
             }
-            .registro-input {
-                width: 60%;
-                margin: 1.5vh 20%;
+                .registro-label > label {
+                    color: gray;
+                    float: left;
+                    font-weight: bold;
+                }
+                .registro-input {
+                    width: 95%;
+                    /* height: 2vh; */
+                    margin: 1.5vh auto;
+                    padding: 10px 2.5%;
+                    border: 1px solid #ccc;
+                    border-radius: 5px;
+                }
+                .registro-select {
+                    width: 100.7%;
+                    /* height: 6vh; */
+                    margin: 1.5vh auto;
+                    padding: 10px 2.5%;
+                    border: 1px solid #ccc;
+                    border-radius: 5px;
+                }
+                    .registro-select option[value=""] {
+                        color: gray;
+                    }
+            #registro-label-trabaja{
+                margin: 5vh auto;
+
             }
+                /* .registro-check {
+                    float: right;
+                } */
 
             .btn-enviar {
-                width: 40%;
-                margin: 0 30%;
-                margin-top: 4vh;
+                display: block;
+                width: 101.5%;
+                border: none;
+                border-radius: 3px;
+                background-color: #37be60;
+                color: #fff;
+                font-weight: bold;
+                padding: 2vh 0;
+                margin: 2vh auto;
             }
 
 footer {
@@ -78,6 +124,7 @@ footer {
     background-color: #2b2929;
 }
     .footer-p {
+        font-family: var(--font-family-body);
         color: #fff;
         padding-bottom: 0.35%;
     }
