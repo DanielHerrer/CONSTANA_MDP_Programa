@@ -4,71 +4,44 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulario</title>
-    <link rel="stylesheet" href="./styles/reset.css">
-    <link rel="stylesheet" href="./styles/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Asap:wght@200&display=swap" rel="stylesheet">
+    <title>Formulario de registro</title>
 </head>
 <body>
-    <header>
-        <p class="titulo-header">MDP Programa</p>
-    </header>
-    <main>
-        <section>
-            <form class="registro" action="/url" method="post">
-                <h1 class="registro-titulo">Formulario de registro</h1>
-                <h2 class="registro-subtitulo">Informacion personal</h2>
-                <div class="registro-label">
-                    <label for="nombre">Nombre:</label>
-                    <input class="registro-input" type="text" id="nombre" name="nombre" required>
-                </div>
-                <div class="registro-label">
-                    <label for="apellido">Apellido:</label>
-                    <input class="registro-input" type="text" id="apellido" name="apellido" required>
-                </div>
-                <div class="registro-label">
-                    <label for="email">Email:</label>
-                    <input class="registro-input" type="email" id="email" name="email" required>
-                </div>
-                <div class="registro-label">
-                    <label for="tel">Telefono:</label>
-                    <input class="registro-input" type="tel" id="telefono" name="telefono" required>
-                </div>
-                <div class="registro-label">
-                    <label for="select">Pais:</label>
-                    <select  class="registro-select" name="pais" id="pais" required>
-                        <option value="" selected>Ingrese un pais</option>
-                        <option value="arg">Argentina</option>
-                        <option value="esp">España</option>
-                        <option value="mex">Mexico</option>
-                        <option value="uru">Uruguay</option>
-                        <option value="chi">Chile</option>
-                    </select>
-                </div>
-                <div class="registro-label">
-                    <label>
-                        <h4>¿Trabaja actualmente?</h4>
-                        <input type="radio" name="trabaja" id="trabaja" required>Si
-                        <input type="radio" name="trabaja" id="trabaja" checked="true">No
-                    </label>
-                </div>
-                <div class="registro-label">
-                    <label>
-                        <h4>Enviar CV:</h4>
-                        <input type="file" name="cv" id="cv">
-                    </label>
-                </div>
-                
-                <button type="submit" class="btn-enviar">Enviar</button>
-            </form>
-        </section>
-    </main>
-    <footer>
-        <p class="footer-p">MDP Programa - Formulario de Ingreso</p>
-        <p class="footer-p"><a href="https://github.com/DanielHerrer" target="_blank" rel="noopener noreferrer"><img class="logo-github" src="./img/logo-github.png" alt="Logo de GitHub">GitHub</a></p>
-        <p class="footer-p"><a href="https://www.linkedin.com/in/danielfrancoherrera/" target="_blank" rel="noopener noreferrer"><img class="logo-linkedin" src="./img/logo-linkedin.png" alt="Logo de LinkedIn">Daniel Franco Herrera</a></p>
-    </footer>
+    <fieldset>
+        <legend>Formulario de registro</legend>
+        <form action="">
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre">
+            <br>
+            <label for="apellido">Apellido</label>
+            <input type="text" id="apellido">
+            <br>
+            <label for="documento">Documento</label>
+            <input type="text" id="documento">
+            <br>
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email">
+            <br>
+            <label for="seleccion">Pais de origen</label>
+            <select name="seleccion" id="" required>
+                <option value="">Seleccione una opcion</option>
+                <option value="1">Argentina</option>
+                <option value="2">Brasil</option>
+                <option value="3">Colombia</option>
+                <option value="4">Chile</option>
+                <option value="5">Uruguay</option>
+            </select>
+            <br>
+    
+            <label for="trabajo">¿Tiene trabajo?</label>
+            <br>
+            <input type="radio" name="trabajo" value="conempleo"> Si
+            <br>
+            <input type="radio" name="trabajo" value="sinempleo"> No
+            <br>
+            <button>Registrar</button>
+        </form>
+    </fieldset>
+    
 </body>
 </html>
