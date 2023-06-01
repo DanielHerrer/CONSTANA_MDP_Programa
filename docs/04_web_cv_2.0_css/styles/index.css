@@ -107,6 +107,6 @@ h2.name {
     font-size: var(--size-font-m);
 }
 
-.field-exp ul li:nth-last-child(-n+2) {
+.field-exp ul li:nth-child(4), .field-exp ul li:nth-child(5){
     opacity: 0.5;
 }

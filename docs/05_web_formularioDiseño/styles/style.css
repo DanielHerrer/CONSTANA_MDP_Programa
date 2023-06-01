@@ -97,13 +97,10 @@ main {
                     .registro-select option[value=""] {
                         color: gray;
                     }
-            #registro-label-trabaja{
-                margin: 5vh auto;
 
+            .registro div:last-of-type {
+                margin: 5vh auto;
             }
-                /* .registro-check {
-                    float: right;
-                } */
 
             .btn-enviar {
                 display: block;
