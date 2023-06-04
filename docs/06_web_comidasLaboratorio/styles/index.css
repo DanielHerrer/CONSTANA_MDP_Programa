@@ -154,7 +154,7 @@ main section .card {
 }
 main section .card .card-img {
     /* background-image: url(../img/product_02.jpg); */
-    max-width: 100%;
+    width: 100%;
     height: 300px;
     /* background-size: cover; */
     border-radius: 15px 15px 0px 0px;
@@ -162,7 +162,7 @@ main section .card .card-img {
     position: relative;
     z-index: 1;
 }
-main section .card .card-img img {
+main section .card .card-img > img {
     width: 100%;
     height: auto;
 }
