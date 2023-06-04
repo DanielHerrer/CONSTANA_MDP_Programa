@@ -17,7 +17,6 @@ Clases:
 
 Laboratorios:
 
-<a href="https://danielherrer.github.io/MDP_Programa_HTML-CSS/02_web_BlogTablas/index.html">Laboratorio 01 - Web Tablas Maquetadas</a>
+<a href="https://danielherrer.github.io/MDP_Programa_HTML-CSS/02_web_tablasLaboratorio/index.html">Laboratorio 01 - Web Tablas Maquetadas</a>
 
-
-
+<a href="https://danielherrer.github.io/MDP_Programa_HTML-CSS/06_web_comidasLaboratorio/index.html">Laboratorio 02 - Web Comidas Laboratorio</a>
