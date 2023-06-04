@@ -15,7 +15,7 @@ Clases:
 
 <a href="https://danielherrer.github.io/MDP_Programa_HTML-CSS/05_web_formularioDiseño/index.html">Actividad Clase 05 - Web Primer Formulario con Diseño</a>
 
-Laboratorio:
+Laboratorios:
 
 <a href="https://danielherrer.github.io/MDP_Programa_HTML-CSS/02_web_BlogTablas/index.html">Laboratorio 01 - Web Tablas Maquetadas</a>
 
