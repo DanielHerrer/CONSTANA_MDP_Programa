@@ -17,6 +17,7 @@ header {
     width: 100%;
     height: 100px;
     position: fixed;
+    z-index: 999;
     background: linear-gradient(180deg, #6b434e, #d35675);
     padding: 0 30px;
 }
@@ -125,6 +126,7 @@ aside form button {
     color: #ffffff;
     /* font-weight: bold; */
     font-size: 17px;
+    cursor: pointer;
 }
 aside form button:hover{
     transform: scale(1.05);
@@ -135,6 +137,10 @@ main {
     /* clear: both; */
     float: right;
     padding: 125px 20px 20px 20px;
+}
+main section h2 {
+    margin: 25px 0 15px 0;
+    scroll-margin-top: 125px;
 }
 main section .card {
     display: inline-block;
@@ -147,30 +153,63 @@ main section .card {
     clear: both;
 }
 main section .card .card-img {
-    background-image: url(../img/product_02.jpg);
+    /* background-image: url(../img/product_02.jpg); */
     max-width: 100%;
     height: 300px;
-    background-size: cover;
+    /* background-size: cover; */
     border-radius: 15px 15px 0px 0px;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+}
+main section .card .card-img img {
+    width: 100%;
+    height: auto;
 }
 main section .card .price {
     background-color: #ff0040;
-    width: 25%;
+    width: 35%;
+    height: 30px;
     color: white;
-    font-size: 20px;
-    position: relative;
-    right: 0;
+    border-radius: 15px 0 15px 0; 
+    text-align: center;
+    padding: 5px;
+    position: absolute;
+    z-index: 2;
 }
 main section .card .card-text {
     padding: 20px;
     font-family: 'Poppins';
+    text-align: center;
 }
 main section .card button {
     width: 100%;
     border: none;
     border-radius: 0px 0px 15px 15px;
-    padding: 10px;
+    padding: 15px;
     color: #000;
     font-weight: bold;
     cursor: pointer;
+}
+main section .card button:hover {
+    background-color: #ffc037;
+}
+footer{
+    clear: both;
+    width: 100%;
+    background: #4d3038;
+    margin: 0;
+    padding: 30px;
+}
+footer div {
+    width: 100%;
+}
+footer div > a {
+    text-decoration: none;
+    color: #fff;
+    margin-right: 20px;
+}
+footer div span {
+    float: right;
+    color: #fff;
 }
