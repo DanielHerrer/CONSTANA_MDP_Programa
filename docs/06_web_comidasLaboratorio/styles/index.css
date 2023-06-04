@@ -1,0 +1,176 @@
+/*
+font-family: 'Montserrat', sans-serif;
+font-family: 'Poppins', sans-serif;
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat';
+}
+
+header {    
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    background: linear-gradient(180deg, #6b434e, #d35675);
+    padding: 0 30px;
+}
+header div{
+    width: 85px;
+    padding: 5px;
+    margin-top: 5px;
+    float: right;
+    background-color: #fff;
+    border-radius: 50%;
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+header div img {
+    width: 75px;
+    margin: auto;
+    /* max-width: 100%; */
+}
+header nav {
+    /* display: inline-block; */   
+    height: 100px;
+    margin-top: 20px;
+    float: left;
+}
+header nav ul li {
+    list-style-type: none;
+    float: left;
+}
+header nav ul li a {
+    text-decoration: none;
+    padding: 15px;
+    display: inline-block;
+    color: #ffffff;
+    font-size: 20px;
+    font-family: 'Poppins';
+    /* background-color: blanchedalmond; */
+}
+header nav ul li a:hover {
+    color: #ffe600;
+    font-weight: bold;
+}
+aside {
+    /* background-color: #fff7d5; */
+    width: 25%;
+    /* clear: both; */
+    float: left;
+    padding: 125px 20px 20px 20px;
+}
+aside p {
+    font-size: 30px;
+    text-align: center;
+    letter-spacing: 10px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+aside nav ul li {
+    list-style-type: none;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+    border-bottom: 2px solid #222436;
+}
+aside nav ul li a {
+    text-decoration: none;
+    color: #ff0040;
+    font-size: 20px;
+}
+aside form {
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    border: 2px solid #222436;
+    border-radius: 15px;
+}
+aside form h1 {
+    padding-bottom: 20px;
+    font-size: 25px;
+    text-align: center;
+    letter-spacing: 5px;
+    font-weight: bold;
+}
+aside form > input, textarea {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    background-color: #6b434e;
+    color: #fff;
+    
+}
+aside form textarea {
+    height: 55px;
+    resize: none;
+}
+aside form > input::placeholder ,textarea::placeholder {
+    color: #fff;
+}
+aside form button {
+    width: 90%;
+    padding: 5px;
+    margin: 0 auto;
+    background-color: #d35675;
+    border: 0;
+    border-radius: 5px;
+    color: #ffffff;
+    /* font-weight: bold; */
+    font-size: 17px;
+}
+aside form button:hover{
+    transform: scale(1.05);
+}
+main {
+    background-color: rgb(255, 255, 255);
+    width: 75%;
+    /* clear: both; */
+    float: right;
+    padding: 125px 20px 20px 20px;
+}
+main section .card {
+    display: inline-block;
+    width: 30%;
+    /* padding: 10px; */
+    margin: 10px;
+    border: 1px solid black;
+    border-radius: 15px;
+    box-shadow: 4px 4px 10px 0px #000000e3;
+    clear: both;
+}
+main section .card .card-img {
+    background-image: url(../img/product_02.jpg);
+    max-width: 100%;
+    height: 300px;
+    background-size: cover;
+    border-radius: 15px 15px 0px 0px;
+}
+main section .card .price {
+    background-color: #ff0040;
+    width: 25%;
+    color: white;
+    font-size: 20px;
+    position: relative;
+    right: 0;
+}
+main section .card .card-text {
+    padding: 20px;
+    font-family: 'Poppins';
+}
+main section .card button {
+    width: 100%;
+    border: none;
+    border-radius: 0px 0px 15px 15px;
+    padding: 10px;
+    color: #000;
+    font-weight: bold;
+    cursor: pointer;
+}
