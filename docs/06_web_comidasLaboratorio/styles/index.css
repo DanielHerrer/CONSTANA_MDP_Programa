@@ -136,7 +136,7 @@ main {
     width: 75%;
     /* clear: both; */
     float: right;
-    padding: 125px 20px 20px 20px;
+    padding: 105px 20px 20px 20px;
 }
 main section h2 {
     margin: 25px 0 15px 0;
@@ -208,6 +208,10 @@ footer div > a {
     text-decoration: none;
     color: #fff;
     margin-right: 20px;
+}
+footer div > a:hover {
+    color: #ffe600;
+    font-weight: bold;
 }
 footer div span {
     float: right;
