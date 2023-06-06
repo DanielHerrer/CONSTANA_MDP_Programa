@@ -1,0 +1,63 @@
+.flex-containt{
+    display: flex;
+    background-color: #eee;
+    /* Direccion de los items */
+    /* flex-direction: row; /* row | row reverse | column | column reverse*/
+    /* Multiples line, una linea */
+    /* flex-wrap: wrap; /* wrap | wrap reverse (atrapa los items para que no se solapen) */
+    /* Permite establecer simultaneamente direction - wrap */
+    flex-flow: row wrap;
+    justify-content: space-around; /* start = al principio | end = al final | center = centrados | space-between , space-around */
+    align-items: stretch; 
+    /* flex start flex end center stretch*/
+    height: 100vh;
+}   
+
+.flex-containt div {
+    height: 35vh;
+    margin: 10px;
+    border: 1px solid red;
+    font-size: 50px;
+}
+
+.uno {
+    background-color: red;
+    align-self: flex-start;
+    order: 3; /* posicion (-1 = al principio )*/
+    flex-grow: 6;
+}
+
+.dos {
+    background-color: green;
+    order: 1;
+    flex-grow: 3;
+}
+
+.tres {
+    background-color: blue;
+    order: 2;
+    flex-grow: 3;
+}
+
+.flex-general {
+    background-color: red;
+    display: flex;
+    height: 30vh;
+}
+.flex-general .a {
+    background-color: aqua;
+    flex-grow: 6;
+}
+
+.flex-general .b {
+    background-color: aliceblue;
+    flex-grow: 6;
+    display: flex;
+}
+
+.flex-general .b div {
+    background-color: red;
+    flex-grow: 4;
+    margin: 10px;
+}
+
