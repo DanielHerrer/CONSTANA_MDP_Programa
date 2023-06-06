@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.flex-container {
+    display: flex;
+    height: 100vh;
+}
+
+.flex-container .aside {
+    display: flex;
+    flex-direction: column;
+    background-color: aqua;
+    flex-grow: 4;
+    margin: 10px;
+    align-items: center;
+}
+
+.flex-container .aside .logo {
+    background-color: orange;
+    border-radius: 50%;
+    margin: 10px;
+    flex-grow: 2;
+    width: 60%;
+    height: 100px;
+}
+
+.flex-container .aside .menu {
+    background-color: green;
+    margin: 10px;
+    flex-grow: 4;
+    width: 80%;
+}
+
+.flex-container .aside .contact {
+    background-color: green;
+    margin: 10px;
+    flex-grow: 4;
+}
+
+.flex-container .main {
+    display: flex;
+    flex-direction: column;
+    background-color: aqua;
+    flex-grow: 8;
+    margin: 10px;
+}
+
+.flex-container .main .pic {
+    background-color: red;
+    flex-grow: 5;
+    margin: 10px;
+}
+
+.flex-container .main .pic img {
+    max-width: 100%;
+    /* height: 500px; */
+    /* margin: 10px; */
+}
+
+.flex-container .main .info {
+    display: flex;
+    flex-direction: column;
+    background-color: red;
+    flex-grow: 5;
+    margin: 10px;
+}
+
+.flex-container .main .info .search{
+    background-color: orange;
+    flex-grow: 2;
+    margin: 10px;
+}
+
+.flex-container .main .info .items {
+    display: flex;
+    flex-flow: stretch wrap;
+    flex-grow: 8;
+    background-color: orange;
+    margin: 10px;
+}
+
+.flex-container .main .items .item {
+    background-color: lightcoral;
+    margin: 10px;
+    flex-grow: 1;
+}
+
+
+footer {
+    background-color: blueviolet;
+    height: 200px;
+    width: 100%;
+}
