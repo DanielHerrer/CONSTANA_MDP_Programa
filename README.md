@@ -15,6 +15,8 @@ Clases:
 
 <a href="https://danielherrer.github.io/MDP_Programa_HTML-CSS/05_web_formularioDiseño/index.html">Actividad Clase 05 - Web Primer Formulario con Diseño</a>
 
+<a href="https://danielherrer.github.io/MDP_Programa_HTML-CSS/07_web_foodFlex/index.html">Actividad Clase 07 - Web Maquetado Flex</a>
+
 Laboratorios:
 
 <a href="https://danielherrer.github.io/MDP_Programa_HTML-CSS/02_web_tablasLaboratorio/index.html">Laboratorio 01 - Web Tablas Maquetadas</a>
