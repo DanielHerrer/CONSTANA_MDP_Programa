@@ -5,7 +5,7 @@ El repositorio almacena el material de trabajo y ejercicios que se vayan present
 
 Clases:
 
-<a href="https://danielherrer.github.io/MDP_Programa_HTML-CSS/00_web_hojaDeVida/index.html">() Actividad Clase 01 (15/5) - Web Hoja de Vida</a>
+<a href="https://danielherrer.github.io/MDP_Programa_HTML-CSS/00_web_hojaDeVida/index.html">Actividad Clase 01 (15/5) - Web Hoja de Vida</a>
 
 <a href="https://danielherrer.github.io/MDP_Programa_HTML-CSS/01_web_primerFormulario/index.html">Actividad Clase 02 (17/5) - Web Primer Formulario</a>
 
