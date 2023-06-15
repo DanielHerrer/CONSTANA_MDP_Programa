@@ -5,18 +5,20 @@ El repositorio almacena el material de trabajo y ejercicios que se vayan present
 
 Clases:
 
-<a href="https://danielherrer.github.io/MDP_Programa_HTML-CSS/00_web_hojaDeVida/index.html">Actividad Clase 01 - Web Hoja de Vida</a>
+<a href="https://danielherrer.github.io/MDP_Programa_HTML-CSS/00_web_hojaDeVida/index.html">Actividad Clase 01 (15/5) - Web Hoja de Vida</a>
 
-<a href="https://danielherrer.github.io/MDP_Programa_HTML-CSS/01_web_primerFormulario/index.html">Actividad Clase 02 - Web Primer Formulario</a>
+<a href="https://danielherrer.github.io/MDP_Programa_HTML-CSS/01_web_primerFormulario/index.html">Actividad Clase 02 (17/5) - Web Primer Formulario</a>
 
-<a href="https://danielherrer.github.io/MDP_Programa_HTML-CSS/03_web_dimensionesSimples/index.html">Actividad Clase 03 - Web Dimensiones</a>
+<a href="https://danielherrer.github.io/MDP_Programa_HTML-CSS/03_web_dimensionesSimples/index.html">Actividad Clase 03 (22/5) - Web Dimensiones</a>
 
-<a href="https://danielherrer.github.io/MDP_Programa_HTML-CSS/04_web_cv_2.0_css/index.html">Actividad Clase 04 - Web CV 2.0</a>
+<a href="https://danielherrer.github.io/MDP_Programa_HTML-CSS/04_web_cv_2.0_css/index.html">Actividad Clase 04 (24/5) - Web CV 2.0</a>
 
-<a href="https://danielherrer.github.io/MDP_Programa_HTML-CSS/05_web_formularioDiseño/index.html">Actividad Clase 05 - Web Primer Formulario con Diseño</a>
+<a href="https://danielherrer.github.io/MDP_Programa_HTML-CSS/05_web_formularioDiseño/index.html">Actividad Clase 05 (29/5) - Web Primer Formulario con Diseño</a>
+
+<a href="https://danielherrer.github.io/MDP_Programa_HTML-CSS/07_web_foodFlex/index.html">Actividad Clase 07 (5/6) - Web Maquetado Flex</a>
 
 Laboratorios:
 
-<a href="https://danielherrer.github.io/MDP_Programa_HTML-CSS/02_web_tablasLaboratorio/index.html">Laboratorio 01 - Web Tablas Maquetadas</a>
+<a href="https://danielherrer.github.io/MDP_Programa_HTML-CSS/02_web_tablasLaboratorio/index.html">Laboratorio 01 (19/5) - Web Tablas Maquetadas</a>
 
-<a href="https://danielherrer.github.io/MDP_Programa_HTML-CSS/06_web_comidasLaboratorio/index.html">Laboratorio 02 - Web Constana King</a>
+<a href="https://danielherrer.github.io/MDP_Programa_HTML-CSS/06_web_comidasLaboratorio/index.html">Laboratorio 02 (2/6) - Web Constana King</a>
