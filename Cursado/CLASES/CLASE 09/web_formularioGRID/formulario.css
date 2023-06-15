@@ -1,0 +1,116 @@
+.formulario {
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    border: 1px solid black;
+    width: 25%;
+    margin-top: 25vh;
+    z-index: -1;
+}
+
+.input {
+    padding: 5px;
+    position: relative;
+}
+
+.input input {
+    width: 100%;
+    border: 1px solid #000;
+    border-radius: 20px;
+    height: 30px;
+    outline: none;
+}
+
+.input input::placeholder { /* pseudoelemento */
+    color: red;
+    opacity: 0.5;
+}
+
+.input input:focus { /* pseudoclase */
+    border-bottom: 3px solid #000;
+}
+
+.input input:invalid {
+    color: white;
+    background-color: red;
+}
+
+.input input:valid {
+    color: black;
+}
+
+.submit button {
+    width: 100%;
+    padding: 5px;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+    border-radius: 10px;
+    background-color: lightcoral;
+}
+
+.icon-input-left {
+    position: absolute;
+    left: 15px;
+    bottom: 15px;
+}
+
+.icon-input-right {
+    position: absolute;
+    right: 15px;
+    bottom: 15px;
+}
+
+.input .left {
+    padding-left: 30px;
+}
+
+.input .right {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.header {
+    background-color: #606;
+    position: fixed;
+    height: 20vh;
+    width: 100%;
+    top: 0;
+    z-index: 1;
+}
+
+.relative {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+}
+
+.relative div {
+    width: 200px;
+    height: 200px;
+}
+
+.relative .a {
+    position: absolute;
+    background-color: orange;
+    top: 0;
+    left: 0;
+    z-index: 6;
+}
+
+.relative .b {
+    position: absolute;
+    background-color: blue;
+    top: 0;
+    left: 150px;
+    z-index: 4;
+}
+
+.relative .c {
+    position: absolute;
+    background-color: bisque;
+    top: 0;
+    left: 300px;
+    z-index: 3;
+}

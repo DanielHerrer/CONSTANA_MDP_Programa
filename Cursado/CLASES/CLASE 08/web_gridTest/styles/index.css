@@ -1,0 +1,94 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.grid {
+    display: grid; /* grid || inline-grid */
+    grid-template-columns: auto auto auto; /* 50px 50% 2fr 1fr */
+    grid-template-rows: auto auto;
+    background-color: beige;
+    padding: 10px;
+    /*
+    column-gap: 10px;
+    row-gap: 10px;
+    gap: <row-gap> <column-gap>;
+    */
+    gap: 10px 50px;
+    /*
+    justify-items: Alinea los item en horizontal
+    align-items: Alinea los items en vertical
+    justify-content: Alinea el contenido en horizontal
+    align-content: Alinea el contenido en vertical
+    */
+
+    /* justify-items: end; 
+    justify-content: space-around; */
+
+    /*
+    atajos =
+    place-items: [align-items][justify-items];
+    place-content: [align-content][justify-content];
+    place-self: [align-self][justify-self]; 
+    */
+
+}
+
+.grid .item {
+    background-color: rgb(159, 159, 196);
+    text-align: center;
+    padding: 20px;
+    font-size: 30px;
+    border: 1px dashed black;
+}
+
+.grid .item_1 {
+    /* 
+    grid-column-start: 1;
+    grid-column-end: span 3;
+    grid-row: 1/span 3 
+    */
+    grid-column: 1 / span 3;
+}
+
+/*----------------------------------------------------*/
+
+/* grid-area: [grid-column][grid-row] */
+
+.grid-container {
+    display: grid;
+    background-color: cadetblue;
+    gap: 10px; /* separacion */
+    grid-template-areas: 'header header header header header'
+                         'menu main main main aside'
+                         'menu footer footer footer footer';
+}
+
+.grid-container .item {
+    background-color: burlywood;
+    text-align: center;
+    padding: 20px;
+    font-size: 30px;
+}
+
+.item-header {
+    grid-area: header;
+}
+
+.item-menu {
+    grid-area: menu;
+}
+
+.item-main {
+    grid-area: main;
+    column-count: 3; /* columnas de parrafo */
+    column-width: 50px;
+}
+
+.item-aside {
+    grid-area: aside;
+}
+
+.item-footer {
+    grid-area: footer;
+}
