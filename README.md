@@ -19,6 +19,10 @@ Clases:
 
 Laboratorios:
 
-<a href="https://danielherrer.github.io/MDP_Programa_HTML-CSS/02_web_tablasLaboratorio/index.html">Laboratorio 01 (19/5) - Web Tablas Maquetadas</a>
+<a href="https://danielherrer.github.io/MDP_Programa_HTML-CSS/02_web_tablasLaboratorio/index.html">Laboratorio 01 (19/5) - Web Tablas</a>
 
-<a href="https://danielherrer.github.io/MDP_Programa_HTML-CSS/06_web_comidasLaboratorio/index.html">Laboratorio 02 (2/6) - Web Constana King</a>
+<a href="https://danielherrer.github.io/MDP_Programa_HTML-CSS/07_web_foodFlex/index.html">Laboratorio 02 (2/6) - Web ConstanaKing</a>
+
+<a href="https://danielherrer.github.io/MDP_Programa_HTML-CSS/08_web_flexLaboratorio/index.html">Laboratorio 03 (9/6) - Web (Sin Terminar)</a>
+
+<a href="https://danielherrer.github.io/MDP_Programa_HTML-CSS/09_web_gridFlexLaboratorio/web/index.html">Laboratorio 04 (16/6) - Web D&D</a>
