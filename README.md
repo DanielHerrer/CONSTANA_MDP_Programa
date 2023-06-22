@@ -15,4 +15,4 @@ Laboratorios:
 
 <a href="https://danielherrer.github.io/MDP_Programa_HTML-CSS/06_web_comidasLaboratorio/index.html">Laboratorio - Web ConstanaKing</a>
 
-<a href="https://danielherrer.github.io/MDP_Programa_HTML-CSS/09_web_gridFlexLaboratorio/web/index.html">Laboratorio - Web D&D</a>
+<a href="https://danielherrer.github.io/MDP_Programa_HTML-CSS/09_web_gridFlexLaboratorio/index.html">Laboratorio - Web D&D</a>
