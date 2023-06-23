@@ -28,7 +28,7 @@
     margin-left: 40px;
     background: url(../img/logo_d&d1.png);
     background-size: contain;
-    background-repeat:no-repeat;
+    background-repeat: no-repeat;
 }
 
 .header .menu {
@@ -60,6 +60,7 @@
 .header .menu .list-menu li:hover {
     cursor: pointer;
     color: rgb(255, 7, 61);
+    transition: 0.5s;
 }
 
 .main {
@@ -201,6 +202,7 @@
 .main .products .card-event .btn-registrarse:hover {
     background-color: rgb(121, 50, 60);
     cursor: pointer;
+    transition: 0.5s;
 }
 
 .main .products .card-event .btn-registrarse i {
@@ -232,6 +234,7 @@
     filter: grayscale(0);
     /* transition: 1s; */
     z-index: 1;
+    transition: 0.5s;
 }
 
 .main .gallery .gallery-item .one {
@@ -256,6 +259,41 @@
     /* height: 10vh; */
 }
 
+.footer .footer-form i {
+    float: left;
+    scale: 2.5;
+    margin: 27px 30px 0 40px;
+}
+
+.footer .footer-form .suscripcion-form {
+    float: left;
+    margin-top: 10px;
+    margin-left: 15px;
+    text-align: center;
+}
+
+.footer .footer-form .suscripcion-form input {
+    width: 100%;
+    padding: 2px;
+}
+
+.footer .footer-form .suscripcion-form button {
+    width: 100%;
+    background-color: rgb(94, 145, 92);
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: bold;
+    margin-top: 5px;
+    padding: 2px;
+    border: 0;
+    border-radius: 5px;
+}
+
+.footer .footer-form .suscripcion-form button:hover {
+    cursor: pointer;
+    background-color: rgb(78, 185, 74);
+}
+
 .footer .footer-contact {
     /* background-color: rgb(207, 129, 56); */
     width: 100%;
@@ -272,5 +310,6 @@
 .footer .footer-contact i:hover {
     color: rgb(255, 7, 61) !important;
     cursor: pointer;
+    transition: 0.5s;
     /* background-color: red; */
 }
