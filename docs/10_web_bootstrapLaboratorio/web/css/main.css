@@ -1,0 +1,120 @@
+header .logo-sandy {
+    width: 40px;
+}
+
+.redesSociales {
+    top: 25%;
+    background-color: rgba(0, 0, 0,0.4);
+    border: none;
+    border-radius: 0 10px 10px 0;
+    padding: 20px 15px 20px 15px;
+    z-index: 1;
+}
+
+.redesSociales ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.redesSociales ul li {
+    margin: 15px 0 15px 0;
+}
+
+.redesSociales ul li a i {
+    font-size: 30px;
+    padding: 10px 0 10px 0;
+    color: #fff;
+}
+
+/* .carrusel {
+    height: 100%;
+    width: 40vw;
+} */
+
+.carousel {
+    height: 100%;
+}
+
+.carousel .carousel-indicators button {
+    width: 12px !important;
+    height: 12px !important;
+    border-radius: 100%;
+    opacity: 1;
+} 
+
+.carousel .carousel-inner .carousel-item {
+    height: 100% !important;
+}
+
+.carousel .carousel-inner .carousel-item img {
+    width: 100%;
+    height: 100%;
+} 
+
+.carousel-indicators .active {
+    opacity: 1;
+    background-color: palevioletred !important;
+}
+
+/* .galeria {
+    height: 90vh;
+    width: 55vw;
+} */
+
+.row {
+    height: 100%;
+    width: 100%;
+}
+
+.row .col-4 {
+    padding: 0 !important;
+    /* height: 50%; */
+}
+
+.row .col-4 .card {
+    border-radius: 0 !important;
+}
+
+.row .col-4 .card img {
+    /* height: 36vh !important; */
+    border-radius: 0 !important;
+    filter: grayscale(0.7);
+}
+
+.row .col-4 .card img:hover {
+    filter: grayscale(0);
+    transition: 0.5s;
+}
+
+.row .col-4 .card a {
+    border-radius: 25px !important;
+    padding: 0 !important;
+    /* background-color: #000 !important; */
+}
+
+.row .col-4 .card:hover a.btn {
+    display: inline-block !important;
+    position: absolute;
+    cursor: pointer;
+    width: 90%;
+    margin: 5%;
+    bottom: 0;
+}
+
+.modalIndicators {
+    position: relative;
+    margin: 0px;
+    align-items: start;
+    justify-content: left;
+    height: 100px !important;
+    margin-bottom: 10px;
+}
+
+.modalIndicators a {
+    width: 100px !important; 
+}
+
+.modalIndicators a img {
+    height: 100px !important;
+}

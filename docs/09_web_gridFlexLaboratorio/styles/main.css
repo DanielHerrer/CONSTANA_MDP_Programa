@@ -73,7 +73,6 @@
     flex-direction: column;
 }
 
-
 .main .products {
     width: 100%;
     /* height: 70%; */
@@ -312,4 +311,457 @@
     cursor: pointer;
     transition: 0.5s;
     /* background-color: red; */
+}
+
+@media screen and (max-width:1000px){ 
+
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .header {
+        width: 100%;
+        height: 8vh;
+        display: flex;
+        align-items: center;
+    }
+
+    .header .logo {
+        width: 20%;
+        height: 7vh;
+        margin-left: 30px;
+    }
+    
+    .header .menu {
+        width: 80%;
+        height: 7vh;
+    }
+    
+    .header .menu .list-menu {
+        margin: 15px 25px 0 0;
+        font-size: 20px;
+    }
+
+    .main {
+        width: 100%;
+        height: 80vh;
+        padding: 20px;
+        gap: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .main .products {
+        width: 100%;
+        /* height: 70%; */
+        display: grid;
+        grid-template-columns: 1fr 1fr 1.5fr;
+        gap: 20px; /* separacion entre los items */
+        border-radius: 15px;
+        padding: 0 15px 0 15px;
+    }
+
+    .main .products .card-item {
+        border-radius: 25px 25px 15px 15px;
+        box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.7);
+    }
+    
+    .main .products .card-item img {
+        width: 100%;
+        border-radius: 25px 25px 0 0;
+    }
+    
+    .main .products .card-item .precio {
+        width: 100px;
+        height: 30px;
+        font-size: 20px;
+        font-weight: bold;
+        padding: 2px;
+        right: -5px;
+        top: 10px;
+    }
+    
+    .main .products .card-item h3 {
+        font-size: 20px;
+    }
+
+    .main .products .card-item p {
+        margin: 4px 8px 58px 8px;
+        font-size: 13px;
+    }
+    
+    .main .products .card-item button {
+        height: 50px;
+        font-size: 0;
+        position: absolute;
+        bottom: 0;
+    }
+
+    .main .products .card-item button i {
+        font-size: 20px;
+    }
+    
+    .main .products .card-item .btn-favorito {
+        width: 45%;
+        /* float: left; */
+        left: 0;
+        border: none;
+        border-radius: 0 0 0 10px;
+    }
+    
+    .main .products .card-item .btn-favorito i {
+        scale: 1.3;
+    }
+    
+    .main .products .card-item .btn-carrito {
+        width: 54%;
+        /* float: right; */
+        right: 0;
+        border: none;
+        border-radius: 0 0 10px 0;
+    }
+    
+    .main .products .card-item .btn-carrito i {
+        scale: 1.3;
+        margin-right: 10px;
+    }
+    
+    .main .products .card-event {
+        grid-area: 1 / 3 / span 2 / 4;
+        justify-items: center;
+        border-radius: 35px 35px 15px 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+        box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.7);
+    }
+    
+    .main .products .card-event img {
+        width: 100%;
+        margin-top: 45px;
+    }
+    
+    .main .products .card-event p {
+        color: rgba(0, 0, 0, 0.4); 
+        margin: 0 12px 0 12px;
+    }
+    
+    .main .products .card-event .btn-registrarse {
+        width: 95%;
+        height: 70px;
+        border-radius: 15px 15px 15px 15px;
+        border: 0;
+        font-size: 25px;
+        margin-bottom: 13px;
+    }
+    
+    .main .products .card-event .btn-registrarse i {
+        margin-right: 15px;
+    }
+    
+    .main .gallery {
+        width: 100%;
+        border-radius: 15px;
+        display: grid;
+        /* gap: 10px; */
+        margin: 30px 0 30px 0;
+        grid-template-columns: repeat(4,1fr);
+    }
+    
+    .main .gallery .gallery-item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .main .gallery .gallery-item img {
+        width: 100%;
+        filter: grayscale(50%);
+    }
+    
+    .main .gallery .gallery-item img:hover {
+        transform: scale(1.5);
+        filter: grayscale(0);
+        border-radius: 5px;
+        /* transition: 1s; */
+        z-index: 1;
+        transition: 0.5s;
+    }
+    
+    .main .gallery .gallery-item .one {
+        border-radius: 5px 0 0 5px;
+    }
+    
+    .main .gallery .gallery-item .four {
+        border-radius: 0 5px 5px 0;
+    }
+    
+    .footer {
+        width: 100%;
+        height: 15vh;
+        display: flex;
+        padding: 10px;
+    }
+
+    .footer .footer-form {
+        width: 100%;
+    }
+    
+    .footer .footer-form i {
+        display: none;
+    }
+    
+    .footer .footer-form .suscripcion-form {
+        float: left;
+        margin-top: 15px;
+        margin-left: 15px;
+        text-align: center;
+    }
+    
+    .footer .footer-form .suscripcion-form input {
+        width: 100%;
+        padding: 2px;
+    }
+    
+    .footer .footer-form .suscripcion-form button {
+        width: 100%;
+        font-size: 13px;
+        font-weight: bold;
+        margin-top: 5px;
+        padding: 2px;
+        border: 0;
+        border-radius: 5px;
+    }
+    
+    .footer .footer-contact {
+        width: 100%;
+        padding-right: 10px;
+    }
+    
+    .footer .footer-contact i {
+        float: right;
+        margin: 32px 15px 0 15px;
+        scale: 2.2;
+    }
+
+}
+
+@media screen and (max-width:540px){ 
+
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .header {
+        width: 100%;
+        height: 8vh;
+        display: flex;
+        align-items: center;
+    }
+
+    .header .logo {
+        width: 20%;
+        height: 7vh;
+        margin-left: 15px;
+    }
+    
+    .header .menu {
+        width: 80%;
+        height: 7vh;
+    }
+    
+    .header .menu .list-menu {
+        margin: 12px 0px 0 0;
+        font-size: 13px;
+    }
+
+    .main {
+        width: 100%;
+        /* height: 80vh; */
+        padding: 10px;
+        gap: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .main .products {
+        width: 100%;
+        /* height: 70%; */
+        display: grid;
+        grid-template-columns: 1fr 1fr 1.5fr;
+        gap: 20px; /* separacion entre los items */
+        border-radius: 15px;
+        padding: 10px 5px 0 5px;
+    }
+
+    .main .products .card-item {
+        border-radius: 25px 25px 15px 15px;
+        box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.7);
+    }
+    
+    .main .products .card-item img {
+        width: 100%;
+        border-radius: 25px 25px 0 0;
+    }
+    
+    .main .products .card-item .precio {
+        width: 100px;
+        height: 30px;
+        font-size: 20px;
+        font-weight: bold;
+        padding: 2px;
+        right: -5px;
+        top: 10px;
+    }
+    
+    .main .products .card-item h3 {
+        font-size: 15px;
+        margin: 4px 8px 4px 8px;
+    }
+
+    .main .products .card-item p {
+        font-size: 0;
+    }
+    
+    .main .products .card-item button {
+        height: 50px;
+        font-size: 0;
+    }
+
+    .main .products .card-item button i {
+        font-size: 20px;
+    }
+    
+    .main .products .card-item .btn-favorito {
+        width: 45%;
+        float: left;
+        border: none;
+        border-radius: 0 0 0 10px;
+    }
+    
+    .main .products .card-item .btn-favorito i {
+        scale: 1.3;
+    }
+    
+    .main .products .card-item .btn-carrito {
+        width: 54%;
+        float: right;
+        border: none;
+        border-radius: 0 0 10px 0;
+    }
+    
+    .main .products .card-item .btn-carrito i {
+        scale: 1.3;
+        margin-right: 10px;
+    }
+    
+    .main .products .card-event {
+        grid-area: 1 / 3 / span 2 / 4;
+        justify-items: center;
+        border-radius: 35px 35px 15px 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+        box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.7);
+    }
+    
+    .main .products .card-event img {
+        width: 100%;
+        margin-top: 30px;
+    }
+    
+    .main .products .card-event h2 {
+        margin: 10px;
+        font-size: 15px;
+    }
+
+    .main .products .card-event p {
+        color: rgba(0, 0, 0, 0.4); 
+        margin: 0 10px 10px 10px;
+        font-size: 12px;
+    }
+    
+    .main .products .card-event .btn-registrarse {
+        width: 95%;
+        height: 70px;
+        border-radius: 15px;
+        border: 0;
+        font-size: 20px;
+        margin-bottom: 5px;
+    }
+    
+    .main .products .card-event .btn-registrarse i {
+        margin-right: 15px;
+    }
+    
+    .main .gallery {
+        width: 100%;
+        border-radius: 15px;
+        display: grid;
+        /* gap: 10px; */
+        margin: 10px 0 10px 0;
+        grid-template-columns: repeat(4,1fr);
+    }
+    
+    .main .gallery .gallery-item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .main .gallery .gallery-item img {
+        width: 100%;
+        filter: grayscale(50%);
+    }
+    
+    .footer {
+        width: 100%;
+        height: 12vh;
+        display: flex;
+        padding: 0px;
+    }
+    
+    .footer .footer-form i {
+        display: none;
+    }
+    
+    .footer .footer-form .suscripcion-form {
+        float: left;
+        margin-top: 15px;
+        margin-left: 15px;
+        text-align: center;
+    }
+    
+    .footer .footer-form .suscripcion-form input {
+        width: 100%;
+        padding: 2px;
+    }
+    
+    .footer .footer-form .suscripcion-form button {
+        width: 100%;
+        font-size: 13px;
+        font-weight: bold;
+        margin-top: 5px;
+        padding: 2px;
+        border: 0;
+        border-radius: 5px;
+    }
+    
+    .footer .footer-contact {
+        width: 100%;
+        padding-right: 10px;
+    }
+    
+    .footer .footer-contact i {
+        float: right;
+        margin: 32px 7px 0 10px;
+        scale: 1.5;
+    }
+
 }
