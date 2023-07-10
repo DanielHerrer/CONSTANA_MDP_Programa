@@ -5,9 +5,9 @@ El repositorio almacena el material de trabajo y ejercicios que se vayan present
 
 Clases:
 
-<a href="https://danielherrer.github.io/MDP_Programa_HTML-CSS/04_web_cv_2.0_css/index.html">Actividad Clase 04 - Web CV 2.0</a>
+<a class="clase_04" href="https://danielherrer.github.io/MDP_Programa_HTML-CSS/04_web_cv_2.0_css/index.html">Actividad - Web CV 2.0</a>
 
-<a href="https://danielherrer.github.io/MDP_Programa_HTML-CSS/05_web_formularioDiseño/index.html">Actividad Clase 05 - Web Formulario con Diseño</a>
+<a class="clase_05" href="https://danielherrer.github.io/MDP_Programa_HTML-CSS/05_web_formularioDiseño/index.html">Actividad - Web Formulario con Diseño</a>
 
 Laboratorios:
 
