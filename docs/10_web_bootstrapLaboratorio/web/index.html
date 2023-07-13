@@ -2,6 +2,7 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bootstrap</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
@@ -63,8 +64,8 @@
                             </a>
                         </li>
                         </ul>
-                        <div class="d-flex" role="search">
-                            <button class="btn btn-dark rounded-pill" type="submit">CARRITO / $0 <i class="fa-solid fa-cart-shopping"></i></button>
+                        <div class="btn-carrito d-flex" role="search">
+                            <button class="btn btn-secondary rounded-pill" type="submit">CARRITO / $0 <i class="fa-solid fa-cart-shopping"></i></button>
                         </div>
                     </div>
                 </div>
@@ -96,7 +97,7 @@
                         </div>
                         <div class="carousel-inner">
                           <div class="carousel-item active">
-                            <img src="./img/merch/remera_1_naranja.jpg" class="d-block w-100" alt="...">
+                            <img src="./img/merch/remera_5_negro.jpg" class="d-block w-100" alt="...">
                           </div>
                           <div class="carousel-item">
                             <img src="./img/merch/remera_2_amarilla.jpg" class="d-block w-100" alt="...">
@@ -108,7 +109,7 @@
                             <img src="./img/merch/remera_4_rosa.jpg" class="d-block w-100" alt="...">
                           </div>
                           <div class="carousel-item">
-                            <img src="./img/merch/remera_5_negro.jpg" class="d-block w-100" alt="...">
+                            <img src="./img/merch/remera_1_naranja.jpg" class="d-block w-100" alt="...">
                           </div>
                         </div>
                         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -158,7 +159,8 @@
                 </div>
             </section>
 
-            <section class="informacion">
+            <!-- Informacion -->
+            <section class="informacion container-fluid p-0 m-0">
                 <div class="d-flex justify-content-around">
                     <div class="">
                         <div class="item justify-content text-center">
@@ -184,13 +186,80 @@
                 </div>
             </section>
 
-            <div class="linea">
-                <h3 class="texto">REVISA NUESTROS ÚLTIMOS PRODUCTOS</h3>
-            </div>
-
-            <div class="linea">
-                <h3 class="texto">¡SÍGUENOS EN INSTAGRAM!</h3>
-            </div>
+            <!-- Productos -->
+            <section class="productos-grid container-fluid p-0 m-0"> 
+                <div class="regla">
+                    <h3 class="texto">REVISA NUESTROS ÚLTIMOS PRODUCTOS</h3>
+                </div>
+                <div class="productos">
+                    <div class="item">
+                        <div class="item-pic"><img src="./img/merch/remera_1_amarilla.jpg" class="d-block w-100" alt="..."></div>
+                        
+                        <h6 class="item-title">"Demon Hater"</h6>
+                        <p class="item-p">$250</p>
+                    </div>
+                    <div class="item">
+                        <img src="./img/merch/remera_4_rosa.jpg" class="d-block w-100" alt="...">
+                        <h6>"Origami Mask"</h6>
+                        <p>$250</p>
+                    </div>
+                    <div class="item">
+                        <img src="./img/merch/remera_3_naranja.jpg" class="d-block w-100" alt="...">
+                        <h6>"Last breath"</h6>
+                        <p>$200</p>
+                    </div>
+                    <div class="item">
+                        <img src="./img/merch/remera_6_negro.jpg" class="d-block w-100" alt="...">
+                        <h6>"Zeri Ocean Song"</h6>
+                        <p>$250</p>
+                    </div>
+                    <div class="item">
+                        <img src="./img/merch/remera_7_azul.jpg" class="d-block w-100" alt="...">
+                        <h6>"Cosmic Alien"</h6>
+                        <p>$300</p>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Publicidad -->
+            <section class="publicidad-grid container-fluid p-0 m-0"> 
+                <div class="regla">
+                    <h3 class="texto">¡SÍGUENOS EN INSTAGRAM!</h3>
+                </div>
+                <div class="publicidad">
+                    <div class="presentacion-card">
+                        <div class="presentacion-content">
+                            <div class="presentacion-logo">
+                                <img src="./img/sandy_pic.jpg" class="logo-sandy img-fluid" alt="">
+                            </div>
+                            <h4>@hazzer_sandy</h4>
+                            <button>Seguir</button>
+                            <h5>Titulo</h5>
+                            <h6>Tienda de ropa reciclada</h6>
+                            <h6>Estudiante de diseño emprendiendo</h6>
+                            <p>Solo es un trabajo no vendemos</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="./img/p_4.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="item">
+                        <img src="./img/p_2.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="item">
+                        <img src="./img/p_1.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="item">
+                        <img src="./img/p_6.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="item">
+                        <img src="./img/p_5.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="item">
+                        <img src="./img/p_3.jpg" class="d-block w-100" alt="...">
+                    </div>
+                </div>
+            </section>
             
             <!-- Modales -->
             <div class="modal fade" id="cardModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">

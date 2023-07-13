@@ -6,6 +6,16 @@
     color: #fff;
 }
 
+.encabezado .collapse li a:hover {
+    color: #a832f7 !important;
+}
+
+.encabezado .btn-carrito button:hover {
+    background-color: #9141c7 !important;
+}
+
+/*/////////////////////////////////////////////////////////////////////////*/
+
 .redesSociales {
     top: 25%;
     background-color: rgba(0, 0, 0,0.4);
@@ -30,6 +40,8 @@
     padding: 10px 0 10px 0;
     color: #fff;
 }
+
+/*/////////////////////////////////////////////////////////////////////////*/
 
 .articulos .carousel {
     height: 100%;
@@ -106,8 +118,10 @@
     color: #fff !important;
 }
 
+/*/////////////////////////////////////////////////////////////////////////*/
+
 .informacion {
-    margin: 15vh 4vw 15vh 4vw !important;
+    padding: 70px 60px !important;
 }
 
 .informacion > div {
@@ -134,14 +148,29 @@
     font-size: 1rem;
 }
 
-.linea {
+/*/////////////////////////////////////////////////////////////////////////*/
+
+.productos-grid {
+    display: grid !important;
+    grid-template-rows: 40px 1fr;
+    grid-template-columns: repeat(5,1fr) !important;
+    /* margin: 100px 0 !important; */
+    padding: 50px 30px !important;
+    grid-gap: 30px !important;
+}
+
+.productos-grid .regla {
     position: relative;
     height: 5px;
     background-color: #6f2ea5;
-    margin: 100px 50px;
+    margin-bottom: 20px !important;
+    grid-column-start: 1;
+    grid-column-end: 6;
+    grid-row-start: 1;
+    grid-row-end: 2;
 }
 
-.texto {
+.productos-grid .regla .texto {
     position: absolute;
     top: -17.5px;
     left: 50%;
@@ -151,7 +180,102 @@
     /* font-weight: bold; */
     /* font-size: 25px; */
 }
-  
+
+.productos-grid .productos {
+    padding: 0 50px !important;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 6;
+    display: grid;
+    grid-gap: 20px !important;
+    grid-template-columns: repeat(5,1fr);
+}
+
+.productos-grid .productos .item h6 {
+    margin-top: 15px;
+}
+
+.productos-grid .productos .item p {
+    margin-left: 5px;
+    font-weight: bold;
+}
+
+/*/////////////////////////////////////////////////////////////////////////*/
+
+.publicidad-grid {
+    display: grid !important;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr !important;
+    grid-gap: 20px !important;
+    /* margin: 100px 0 !important; */
+    padding: 50px 30px !important;
+}  
+
+.publicidad-grid .regla {
+    position: relative;
+    height: 5px;
+    background-color: #6f2ea5;
+    /* margin: 0 20px !important; */
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 5;
+}
+
+.publicidad-grid .regla .texto {
+    position: absolute;
+    top: -17.5px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #fff;
+    padding: 0 35px;
+    /* font-weight: bold; */
+    /* font-size: 25px; */
+}
+
+.publicidad-grid .publicidad {
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    display: grid;
+    grid-template-rows: 1fr 1fr !important;
+    grid-template-columns: 2fr repeat(3,1fr) !important;
+    padding: 45px 50px !important;
+}
+
+.publicidad-grid .publicidad .presentacion-card {
+    background-color: #e4d5f1;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.publicidad-grid .publicidad .presentacion-card .presentacion-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 60px 25px;
+}
+
+.publicidad-grid .publicidad .presentacion-card .presentacion-content .presentacion-logo {
+    width: 50% !important;
+    /* margin: auto 20px; */
+}
+
+.publicidad-grid .publicidad .presentacion-card .presentacion-content .presentacion-logo img {
+    border-radius: 50% !important;
+}
+
+/* .publicidad-grid .item {
+    background-color: red;
+} */
+
+/*/////////////////////////////////////////////////////////////////////////*/
 
 .modalIndicators {
     position: relative;
@@ -173,3 +297,7 @@
 .pie-de-pagina {
     height: 20vh;
 }
+
+@media screen and (max-width:1000px){}
+
+@media screen and (max-width:540px){}
