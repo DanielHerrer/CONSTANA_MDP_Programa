@@ -7,7 +7,7 @@
 }
 
 .encabezado .collapse li a:hover {
-    color: #a832f7 !important;
+    color: hwb(276 14% 0%) !important;
 }
 
 .encabezado .btn-carrito button:hover {
@@ -192,6 +192,22 @@
     grid-template-columns: repeat(5,1fr);
 }
 
+.productos-grid .productos .item .item-pic {
+    overflow: hidden;
+}
+
+.productos-grid .productos .item .item-pic img {
+    width: 100%;
+    height: 100%;
+    transition: scale 400ms;
+}
+
+.productos-grid .productos .item .item-pic:hover img {
+    scale: 170%;
+    cursor: pointer;
+}
+
+
 .productos-grid .productos .item h6 {
     margin-top: 15px;
 }
@@ -259,16 +275,39 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding: 60px 25px;
+    padding: 30px 25px;
 }
 
 .publicidad-grid .publicidad .presentacion-card .presentacion-content .presentacion-logo {
     width: 50% !important;
-    /* margin: auto 20px; */
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 20px 0 !important;
 }
 
 .publicidad-grid .publicidad .presentacion-card .presentacion-content .presentacion-logo img {
-    border-radius: 50% !important;
+    /* border-radius: 50% !important; */
+    scale: 1.2;
+}
+
+.publicidad-grid .publicidad .presentacion-card .presentacion-content .ig-title {
+    margin: 10px 0 !important;
+}
+
+.publicidad-grid .publicidad .presentacion-card .presentacion-content a button {
+    margin-top: 5px;
+    border: none;
+    width: 100px;
+    height: 35px;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #77A7FF;
+}
+
+.publicidad-grid .publicidad .presentacion-card .presentacion-content a button:hover {
+    background-color: #1877F2;
 }
 
 /* .publicidad-grid .item {
