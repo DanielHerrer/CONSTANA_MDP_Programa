@@ -18,3 +18,5 @@ Laboratorios:
 <a href="https://danielherrer.github.io/MDP_Programa_HTML-CSS/09_web_gridFlexLaboratorio/index.html">Laboratorio - Web D&D Responsive</a>
 
 <a href="https://danielherrer.github.io/MDP_Programa_HTML-CSS/10_web_bootstrapLaboratorio/web/index.html">Laboratorio - Web Ropa Bootstrap</a>
+
+<a href="https://danielherrer.github.io/MDP_Programa_HTML-CSS/11_web_loginLocalStore/index.html">Actividad - Login LocalStore</a>
