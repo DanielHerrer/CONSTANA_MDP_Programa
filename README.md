@@ -9,7 +9,7 @@ Clases:
 
 <a class="clase_05" href="https://danielherrer.github.io/MDP_Programa_HTML-CSS/05_web_formularioDiseño/index.html">Actividad - Web Formulario con Diseño</a>
 
-<a href="https://danielherrer.github.io/MDP_Programa_HTML-CSS/11_web_loginLocalStore/index.html">Actividad - Login LocalStore</a>
+<a href="https://danielherrer.github.io/MDP_Programa_HTML-CSS/11_web_loginLocalStore/index.html">Actividad - Web Login LocalStore</a>
 
 Laboratorios:
 
