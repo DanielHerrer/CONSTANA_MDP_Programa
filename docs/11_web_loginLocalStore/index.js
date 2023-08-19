@@ -1,10 +1,13 @@
-// Actividad realizada por Franco Daniel Herrera
+// Franco Daniel Herrera
+
+// Recibo los elementos
 const contentDiv = document.getElementById('content');
 const searchInput = document.getElementById('searchUser');
 const loginButton = document.getElementById('btnLogin');
 const registerButton = document.getElementById('btnRegister');
 const logoutButton = document.getElementById('btnLogout');
 
+// Añado los eventos
 logoutButton.addEventListener('click', logout);
 loginButton.addEventListener('click', showLoginForm);
 registerButton.addEventListener('click', showRegisterForm);
@@ -13,15 +16,17 @@ searchInput.addEventListener('input', function(event) {
     updateTable(searchText);
 });
 
+// Se inicia el javascript
 checkLoggedInStatus();
 
+// Funciones
 function checkLoggedInStatus() {
     const isLoggedIn = localStorage.getItem('isLoggedIn');
     if (isLoggedIn === 'true') {
         loginButton.style.display = 'none';
         registerButton.style.display = 'none';
         logoutButton.style.display = 'block';
-    } else if (isLoggedIn === 'false') {
+    } else {
         loginButton.style.display = 'inline';
         registerButton.style.display = 'inline';
         logoutButton.style.display = 'none';
@@ -33,7 +38,8 @@ function checkLoggedInStatus() {
 function showLoginForm() {
     const loginForm = document.getElementById('loginForm');
     loginForm.addEventListener('submit', function(event) {
-        
+        event.preventDefault();
+
         // Obtener datos ingresados por el usuario
         const enteredUsername = loginForm.querySelector("#floatingInput").value;
         const enteredPassword = loginForm.querySelector("#floatingPassword").value;
@@ -47,18 +53,20 @@ function showLoginForm() {
             alert("Logeo exitoso!");
             localStorage.setItem('isLoggedIn', 'true');
             checkLoggedInStatus();
-            closeModal('modalLogin');
+
+            // closeModal('modalLogin');
+            window.location.reload();
         } else {
-            alert("Usuario o contraseña incorrectas..");
+            alert("Usuario y/o contraseña incorrectas..");
         }
     });
 }
 
 function showRegisterForm() {
-
     const registerForm = document.getElementById('registerForm');
     registerForm.addEventListener('submit', function(event) {
-        
+        event.preventDefault();
+
         // Obtener datos ingresados por el usuario
         const enteredUsername = registerForm.querySelector("#floatingInput").value;
         const enteredPassword = registerForm.querySelector("#floatingPassword").value;
@@ -75,22 +83,16 @@ function showRegisterForm() {
             storedUsers.push({ username: enteredUsername, password: enteredPassword });
             localStorage.setItem('users', JSON.stringify(storedUsers));
             alert("Registro exitoso!");
-            closeModal('modalRegister');
             
-            // Actualizar la tabla con los datos de usuarios
-            updateTable();
+            // closeModal('modalRegister');
+            window.location.reload();
         }
     });
 }
 
 function closeModal(modalId) {
-    const modal = document.getElementById(modalId);
-    modal.style.display = 'none';
-    
-    const modalBackdrop = document.querySelector('.modal-backdrop');
-    if (modalBackdrop) {
-        modalBackdrop.remove();
-    }
+    const modalAux = document.getElementById(modalId);
+    modalAux.querySelector('.btn-close').click();
 }
 
 function logout() {
