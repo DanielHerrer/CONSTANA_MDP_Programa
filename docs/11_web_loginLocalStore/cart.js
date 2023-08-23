@@ -1,8 +1,7 @@
 // Franco Daniel Herrera
 
 // Recibo los elementos
-const contentDiv = document.getElementById('content');
-const searchInput = document.getElementById('searchUser');
+// const contentDiv = document.getElementById('content');
 const loginButton = document.getElementById('btnLogin');
 const registerButton = document.getElementById('btnRegister');
 const logoutButton = document.getElementById('btnLogout');
@@ -13,15 +12,10 @@ const userName = document.getElementById('nameUser');
 logoutButton.addEventListener('click', logout);
 loginButton.addEventListener('click', showLoginForm);
 registerButton.addEventListener('click', showRegisterForm);
-searchInput.addEventListener('input', function(event) {
-    const searchText = event.target.value.toLowerCase();
-    updateTable(searchText);
-});
 
 // Se inicia el javascript
 checkLoggedInStatus();
 
-// Funciones
 function checkLoggedInStatus() {
     const isLoggedIn = localStorage.getItem('isLoggedIn');
     if (isLoggedIn === 'true') {
@@ -39,7 +33,6 @@ function checkLoggedInStatus() {
         userName.innerText = ``;
         userName.style.display = 'none';
     }
-    updateTable();
 }
 
 function showLoginForm() {
@@ -101,50 +94,63 @@ function logout() {
     localStorage.removeItem('loggedInUser'); // Eliminar el usuario logueado
     localStorage.setItem('isLoggedIn', 'false');
     alert("Se ha cerrado sesión.");
-
+    window.location.href = 'products.html';
     checkLoggedInStatus();
-    updateButtonsState();
 }
 
-function updateTable() {
-    const storedUsers = JSON.parse(localStorage.getItem('users')) || [];
-    const tbody = document.querySelector('tbody');
-    
-    // Limpiar contenido actual de la tabla
-    tbody.innerHTML = '';
-    
-    // Agregar nuevas filas a la tabla
-    storedUsers.forEach((user, index) => {
-        const newRow = document.createElement('tr');
-        newRow.innerHTML = `
-            <th scope="row">${index + 1}</th>
-            <td>${user.username}</td>
-            <td>${user.password}</td>
-        `;
-        tbody.appendChild(newRow);
-    });
+const title = document.getElementById('title');
+const cartList = document.getElementById('cartList');
+const buyButton = document.getElementById('buyButton');
+const cleanButton = document.getElementById('cleanButton');
+
+buyButton.addEventListener('click', finalizePurchase);
+cleanButton.addEventListener('click', cleanPurchase);
+
+function showCartItems() {
+    const loggedInUser = localStorage.getItem('loggedInUser');
+    let cartItems = JSON.parse(localStorage.getItem(loggedInUser)) || [];
+    cartList.innerHTML = '';
+
+    title.innerHTML = `Carrito de compras de <span class="link-warning">${loggedInUser}</span>`;
+
+    if (cartItems.length === 0) {
+        const li = document.createElement('li');
+        li.classList.add('list-group-item', 'd-flex', 'justify-content-between', 'align-items-center');
+        li.innerHTML = `No hay ningún producto para comprar..`
+        cartList.appendChild(li);
+    }else{
+        cartItems.forEach(item => {
+            const li = document.createElement('li');
+            li.classList.add('list-group-item', 'd-flex', 'justify-content-between', 'align-items-center');
+            li.innerHTML = `${item}
+                            <span class="badge bg-primary rounded-pill">PRECIO: $</span>`;
+            cartList.appendChild(li);
+        });
+    }
 }
 
-function updateTable(searchText = '') {
-    const storedUsers = JSON.parse(localStorage.getItem('users')) || [];
-    const tbody = document.querySelector('tbody');
-    
-    // Limpiar contenido actual de la tabla
-    tbody.innerHTML = '';
-    
-    // Agregar nuevas filas a la tabla
-    storedUsers.forEach((user, index) => {
-        // Filtrar usuarios por búsqueda
-        if (user.username.toLowerCase().includes(searchText)) {
-            const newRow = document.createElement('tr');
-            newRow.innerHTML = `
-                <th scope="row">${index + 1}</th>
-                <td>${user.username}</td>
-                <td>${user.password}</td>
-            `;
-            tbody.appendChild(newRow);
-        }
-    });
+function finalizePurchase() {
+    const loggedInUser = localStorage.getItem('loggedInUser');
+    let cartItems = JSON.parse(localStorage.getItem(loggedInUser)) || [];
+
+    if (cartItems.length === 0) {
+        alert("El carrito está vacío.");
+        return;
+    }
+
+    // Realiza cualquier lógica necesaria para finalizar la compra.
+
+    alert('Compra realizada con éxito. ¡Gracias por su compra!');
+
+    // Limpia el carrito y redirige al usuario de vuelta a la página de productos.
+    localStorage.removeItem(loggedInUser);
+    showCartItems(); // Actualiza la visualización del carrito
 }
 
+function cleanPurchase() {
+    const loggedInUser = localStorage.getItem('loggedInUser');
+    localStorage.removeItem(loggedInUser);
+    showCartItems(); // Actualiza la visualización del carrito
+}
 
+showCartItems();

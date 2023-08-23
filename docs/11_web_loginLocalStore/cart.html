@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cart</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous"/>
+</head>
+<body>
+    <header class="p-3 text-bg-dark">
+        <div class="container">
+          <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+            <i class="fa-solid fa-key" style="margin-right: 10px; font-size: 30px; color: #ffbb00;"></i>
+    
+            <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+              <li><a href="index.html" class="nav-link px-2 text-white">Home</a></li>
+              <li><a href="products.html" class="nav-link px-2 text-white">Products</a></li>
+              <li><a href="https://github.com/DanielHerrer" target="_blank" rel="noopener noreferrer" class="nav-link px-2 text-secondary">GitHub</a></li>
+              <li><a href="https://www.linkedin.com/in/danielfrancoherrera/" target="_blank" rel="noopener noreferrer" class="nav-link px-2 text-secondary">LinkedIn</a></li>
+            </ul>
+            
+            <div class="text-end">
+              <a href="#" id="btnLogin" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#modalLogin">Login</a>
+              <a href="#" id="btnRegister" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#modalRegister">Sign-up</a>
+              <a href="index.html" id="btnLogout" class="btn btn-outline-light mx-2">Log Out</a>
+            </div>
+  
+            
+            <a href="cart.html" id="nameUser" class="fa-solid" style="margin: 0 5px; font-size: 16px; color: #ffbb00; text-decoration: none;"></a>
+            <a href="cart.html" id="btnUser"><i class="fa-solid fa-circle-user" style="margin: 0 5px; font-size: 32px; color: #ffbb00;"></i></a>
+          </div>
+        </div>
+    </header>
+
+    <main>
+      <div id="content">
+        <h2 id="title" class="m-3">Carrito de Compras</h2>
+        <ul id="cartList" class="list-group">
+
+        </ul>
+
+        <button id="buyButton" class="btn btn-warning me-5 my-4 float-end">Comprar</button>
+        <button id="cleanButton" class="btn btn-danger me-2 my-4 float-end">Limpiar</button>
+
+      </div>
+    </main>
+
+    <div id="modalLogin" class="modal fade" tabindex="-1">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <!-- <h5 class="modal-title">Modal title</h5> -->
+              <h1 class="h3 fw-normal">Login</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+              <form id="loginForm">
+                  <div class="form-floating mb-2">
+                  <input type="text" class="form-control" id="floatingInput" placeholder="Username" required>
+                  <label for="floatingInput">Username</label>
+                  </div>
+                  <div class="form-floating mb-4">
+                  <input type="password" class="form-control" id="floatingPassword" placeholder="Password" required>
+                  <label for="floatingPassword">Password</label>
+                  </div>
+                  <button class="btn btn-primary w-100 py-2" type="submit">Login</button>
+                  <p class="mt-5 mb-3 text-body-secondary">&copy; MDP Programa 2023</p>
+              </form>
+            </div>
+          </div>
+        </div>
+    </div>
+  
+    <div id="modalRegister" class="modal fade" tabindex="-1">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <!-- <h5 class="modal-title">Modal title</h5> -->
+              <h1 class="h3 fw-normal">Sign-up</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+              <form id="registerForm">
+                  <div class="form-floating mb-2">
+                  <input type="text" class="form-control" id="floatingInput" placeholder="Username" required>
+                  <label for="floatingInput">Username</label>
+                  </div>
+                  <div class="form-floating mb-4">
+                  <input type="password" class="form-control" id="floatingPassword" placeholder="Password" required>
+                  <label for="floatingPassword">Password</label>
+                  </div>
+              
+                  <button class="btn btn-primary w-100 py-2" type="submit">Sign-up</button>
+                  <p class="mt-5 mb-3 text-body-secondary">&copy; MDP Programa 2023</p>
+              </form>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <script src="cart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+</body>
+</html>
