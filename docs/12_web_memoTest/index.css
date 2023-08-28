@@ -1,0 +1,42 @@
+body {
+    margin: 0;
+}
+
+.containMain {
+    height: calc(100vh - 72px); /* Resta la altura del encabezado al 100% vh */
+    overflow: hidden; /* Ajusta el overflow según lo necesario */
+}
+
+.contenedor {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+    max-width: 800px !important;
+    margin: 0 auto !important;
+}
+
+.grid-item {
+    width: 150px !important;
+    height: 150px !important;
+    overflow: hidden !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    transition: all 1.0s ease !important;
+}
+
+.grid-item:hover {
+    cursor: pointer !important;
+    filter: brightness(1.5) !important;
+}
+
+.grid-item img {
+    max-width: 100% !important;
+    max-height: 100% !important;
+    object-fit: cover !important;
+    transition: all 1.0s ease, opacity 0.3s ease, visibility 0.3s ease !important;
+}
+
+.volteada {
+    border: 1px solid black;
+}
