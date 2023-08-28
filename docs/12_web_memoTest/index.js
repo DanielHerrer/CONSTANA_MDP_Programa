@@ -1,3 +1,6 @@
+// FALTA ARREGLAR que cuando se le pregunte al usuario "Desea volver a jugar"
+//  y responda NO entonces los casilleros no se puedan clickear
+
 document.addEventListener("DOMContentLoaded", function() {
 
     // Se recibe la etiqueta <script> del html
@@ -16,7 +19,7 @@ document.addEventListener("DOMContentLoaded", function() {
     // Se recorren los casilleros
     gridItems.forEach(function(gridItem) {
         // A cada casillero se le asigna un evento click
-        gridItem.addEventListener("click", function() {
+        gridItem.addEventListener("click", function clickear() {
 
             // Del casillero se recibe la imagen y se le asigna 'src' concatenando su 'alt'
             let img = gridItem.querySelector("img");
@@ -49,8 +52,23 @@ document.addEventListener("DOMContentLoaded", function() {
 
             if (paresEncontrados === imagenes.length / 2) {
                 setTimeout(function() {
-                    alert("¡Has ganado! ¿Quieres jugar de nuevo?");
-                    resetGame();
+                    Swal.fire({
+                        title: "¡Has ganado!",
+                        text: "¿Quieres jugar de nuevo?",
+                        icon: "success",
+                        showCancelButton: true,
+                        confirmButtonText: "Sí",
+                        cancelButtonText: "No"
+                    }).then((result) => {
+                        if (result.isConfirmed) {
+                            resetGame();
+                        }else{
+                            gridItems.forEach(function(gridItem) {
+                                // Remover el evento click de cada casillero
+                                gridItem.removeEventListener("click", clickear);
+                            });
+                        }
+                    });
                 }, 500);
             }
         } else {
@@ -76,13 +94,33 @@ document.addEventListener("DOMContentLoaded", function() {
 
             if (intentos === 0) {
                 setTimeout(function() {
-                    alert("¡Has perdido! ¿Quieres jugar de nuevo?");
-                    resetGame();
+                    Swal.fire({
+                        title: "¡Has perdido!",
+                        text: "¿Quieres jugar de nuevo?",
+                        icon: "error",
+                        showCancelButton: true,
+                        confirmButtonText: "Sí",
+                        cancelButtonText: "No"
+                    }).then((result) => {
+                        if (result.isConfirmed) {
+                            resetGame();
+                        }else{
+                            gridItems.forEach(function(gridItem) {
+                                // Remover el evento click de cada casillero
+                                gridItem.removeEventListener("click", clickear);
+                            });
+                        }
+                    });
                 }, 500);
             }
         }
 
-        intentosDisplay.textContent = `Intentos restantes: ${intentos}`;
+        // Para que intentos no baje de 0
+        if(intentos<0){
+            intentosDisplay.textContent = `Intentos restantes: 0`;
+        }else{
+            intentosDisplay.textContent = `Intentos restantes: ${intentos}`;
+        }
     }
 
     function resetGame() {
