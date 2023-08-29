@@ -4,6 +4,18 @@ const script = document.querySelector('script[src="index.js"]');
 const imagenes = JSON.parse(script.getAttribute('data'));
 console.log(imagenes);
 
+// const imagenesSrc = [
+//     "img/pic_1.jpg",
+//     "img/pic_2.jpg",
+//     "img/pic_3.jpg",
+//     "img/pic_4.jpg",
+//     "img/pic_5.jpg",
+//     "img/pic_6.jpg",
+//     "img/pic_7.jpg",
+//     "img/pic_8.jpg",
+//     "img/pic_9.jpg",
+//     "img/pic_10.jpg"];
+
 let imagenesVolteadas = [];
 let paresEncontrados = 0;
 let intentos = 6;
@@ -135,10 +147,10 @@ function numeroDeImagen(url) {
 
 // Funcion que mezcla y asigna las imagenes a los casilleros
 function mezclarImagenes() {
-    for (let i = imagenes.length - 1; i > 0; i--) {
-        const j = Math.floor(Math.random() * (i + 1));
-        [imagenes[i], imagenes[j]] = [imagenes[j], imagenes[i]];
-    }
+
+    imagenes.sort(function() {
+        return Math.random() - 0.5; // Función de comparación aleatoria
+    });
 
     // Se usa un indice auxiliar para ir recorriendo imagen por imagen
     let indice = 0;
