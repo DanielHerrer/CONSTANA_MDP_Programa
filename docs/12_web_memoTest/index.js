@@ -72,7 +72,7 @@ function verificarPar() {
                         });
                     }
                 });
-            }, 500);
+            }, 1000);
         }
     } else {
 
@@ -88,7 +88,7 @@ function verificarPar() {
                     setTimeout(function() {
                         gridImg.setAttribute("src", 'img/pic_0.jpg');
                         gridItem.classList.remove("volteada");
-                    }, 500);
+                    }, 1000);
 
                 }
             }
@@ -114,7 +114,7 @@ function verificarPar() {
                         });
                     }
                 });
-            }, 500);
+            }, 1000);
         }
     }
 
