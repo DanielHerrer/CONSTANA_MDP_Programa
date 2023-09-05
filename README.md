@@ -1,4 +1,6 @@
-# MDP Programa
+<img src="banner_constana.jpg">
+
+# MDP Programa Constana
 
 El repositorio almacena el material de trabajo y ejercicios que se vayan presentando a lo largo de la capacitación.
 
